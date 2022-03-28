@@ -1,0 +1,53 @@
+{
+	"events": [
+		{
+			"character": "character-1648490790.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hello! Welcome to the first test of the dialogue system. We want to try to use this in many places."
+		},
+		{
+			"character": "character-1648490790.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What do you think of this?"
+		},
+		{
+			"choice": "It is very good",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1648490790.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "This seems interesting, I'm curious how much dialogue we will have, and how the game's systems will work."
+		},
+		{
+			"choice": "It's strange. ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1648490790.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Welll, that's understandable."
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1648490826.json",
+		"name": "FirstConversation"
+	}
+}
