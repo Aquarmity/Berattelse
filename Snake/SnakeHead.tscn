@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Snake/snakepart.png" type="Texture" id=1]
+[ext_resource path="res://Snake/Snake.gd" type="Script" id=2]
+
+[sub_resource type="CircleShape2D" id=6]
+radius = 31.0644
+
+[node name="SnakeHead" type="KinematicBody2D"]
+collision_mask = 0
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 0.254902, 0.67451, 0.278431, 1 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
