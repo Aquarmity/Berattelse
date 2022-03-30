@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export (int) var speed = 100
+export (int) var accel_speed = 1
 onready var player = null 
 var velocity = Vector2()
 var snakesegscene = preload("res://Snake/SnakeSegment.tscn")
@@ -15,8 +15,9 @@ func _ready():
 		player = get_tree().get_nodes_in_group("player")[0]
 
 func get_input():
-	velocity = Vector2()
+	var accel = 0
 	if player == null: 
+		velocity = Vector2()
 		if Input.is_action_pressed("ui_right"):
 			velocity.x += 1
 		#spr.frame = 2
@@ -30,10 +31,15 @@ func get_input():
 			velocity.y -= 1
 		#spr.frame = 3
 	else:
-		velocity = player.position-position
-	velocity = velocity.normalized() * speed
+		accel = player.position-position
+	velocity += accel.normalized() * accel_speed
+	
 	
 
 func _physics_process(delta):
 	get_input()
-	velocity = move_and_slide(velocity)
+	move_and_slide(velocity)
+	if get_slide_count() > 0:
+		var collision = get_slide_collision(0)
+		if collision != null:
+			velocity = velocity.bounce(collision.normal)

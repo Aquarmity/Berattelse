@@ -11,8 +11,6 @@ var player_state = state.idle
 
 
 func _ready():
-	var new_dialog = Dialogic.start('FirstConversation')
-	add_child(new_dialog)
 	get_input()
 
 
