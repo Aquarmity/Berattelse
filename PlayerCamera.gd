@@ -10,6 +10,6 @@ func _ready():
 	set_limit(2, 1024)
 	set_limit(3, 600)
 
-func _process (delta):
+func _process (_delta):
 	position.x = player.position.x
 	position.y = player.position.y

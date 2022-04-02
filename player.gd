@@ -26,7 +26,7 @@ func get_input():
 		velocity.y -= 1
 	velocity = velocity.normalized() * speed
 
-func _physics_process(delta: float):
+func _physics_process(_delta):
 	get_input()
 	if velocity.x != 0 or velocity.y != 0:
 		player_state = state.running

@@ -4,7 +4,7 @@ extends KinematicBody2D
 var preseg = null
 var maxsize = 20
 var n = 0 
-
+var velocity
 func _ready():
 	var snakesegscene = load("res://Snake/SnakeSegment.tscn")
 	if (n != 0):
