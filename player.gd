@@ -48,6 +48,21 @@ func _physics_process(_delta):
 	if player_state == state.rolling:
 		var fast_velocity = velocity * roll_speed
 		move_and_slide(fast_velocity)
+	#if player_state == state.attacking:
+		pass
+		# other places, to get into this state, should check if player can punch
+		# when punching, create a timer showing how long in this state
+		# create an area 2d that is the punching area in the direction the player is facing
+		# call the hurt() function on any enemies in that area
+		# if timer over, jump out
+	if player_state == state.underAttack:
+		pass
+			# create a hurt() function for the player
+		# have enemies call that function with their direction
+		# use that direction as new velocity = rebound sort of thing
+		# don't let controls move things
+		# use a timer to show how long in this state
+	
 	else: #any unknown state should just become idle
 		get_input()
 		if velocity != Vector2.ZERO:
