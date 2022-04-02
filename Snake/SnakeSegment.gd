@@ -4,7 +4,8 @@ extends KinematicBody2D
 var preseg = null
 var maxsize = 20
 var n = 0 
-var velocity
+var velocity:Vector2
+var accel_speed = 3
 func _ready():
 	var snakesegscene = load("res://Snake/SnakeSegment.tscn")
 	if (n != 0):
@@ -20,10 +21,17 @@ func _ready():
 		scale.y = float(1)/maxsize
 	modulate = lerp(modulate, Color.black, (maxsize-float(n))/maxsize)
 	z_index = n-maxsize
+
+
 func _physics_process(delta):
-	if preseg != null:
+	if preseg != null: # only move if there is something to move to
 		var difVector: Vector2 =  preseg.position - position
+		# find the difference in position to where the segment should be
 		if difVector.length() > (35 - 35*(maxsize-n)/maxsize): 
+			# if it is too far away
 			difVector = difVector - difVector.normalized()*(35 - 35*(maxsize-n)/maxsize)
-			move_and_slide(difVector/delta)
+			# move just the distance to get within the circle defined by the radius of (35 - 35*(maxsize-n)/maxsize)
+			velocity += difVector.normalized() * accel_speed
+			
+			move_and_slide(20 * difVector)
 			rotation = difVector.angle()
