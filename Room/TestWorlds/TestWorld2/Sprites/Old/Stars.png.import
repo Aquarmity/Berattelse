@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spaceship.png-a8aee2801e3b8c6d30c4bff2d748cbe1.stex"
+path="res://.import/Stars.png-7de79403266dffb8557f44f79726ce77.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://spaceship.png"
-dest_files=[ "res://.import/spaceship.png-a8aee2801e3b8c6d30c4bff2d748cbe1.stex" ]
+source_file="res://Room/TestWorlds/TestWorld2/Sprites/Old/Stars.png"
+dest_files=[ "res://.import/Stars.png-7de79403266dffb8557f44f79726ce77.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

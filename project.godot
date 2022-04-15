@@ -81,7 +81,7 @@ _global_script_class_icons={
 [application]
 
 config/name="The Telling"
-run/main_scene="res://TestWorld2.tscn"
+run/main_scene="res://Room/TestWorlds/TestWorld2/TestWorld2.tscn"
 config/icon="res://icon.png"
 
 [display]

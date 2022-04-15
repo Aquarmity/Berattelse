@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stonewalltileset.png-320f03fcd19a39e58b8c91babd7d18fa.stex"
+path="res://.import/BackgroundNight.png-ba33a7c25e7d8fb481eceb707d3d537b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://stonewalltileset.png"
-dest_files=[ "res://.import/stonewalltileset.png-320f03fcd19a39e58b8c91babd7d18fa.stex" ]
+source_file="res://Room/TestWorlds/TestWorld2/Sprites/Old/BackgroundNight.png"
+dest_files=[ "res://.import/BackgroundNight.png-ba33a7c25e7d8fb481eceb707d3d537b.stex" ]
 
 [params]
 

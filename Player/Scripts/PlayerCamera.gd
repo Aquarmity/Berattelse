@@ -1,6 +1,6 @@
 extends Camera2D
 
-onready var player = get_node("/root/TestWorld2/KinematicBody2D")
+onready var player = get_tree().get_nodes_in_group("player")[0]
 
 
 func _ready():

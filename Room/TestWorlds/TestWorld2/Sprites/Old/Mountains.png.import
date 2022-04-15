@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nightdesertground.png-b7f941205086df418782f5db95b312d3.stex"
+path="res://.import/Mountains.png-29757ebb8fee63f21a21df78ed6addab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://nightdesertground.png"
-dest_files=[ "res://.import/nightdesertground.png-b7f941205086df418782f5db95b312d3.stex" ]
+source_file="res://Room/TestWorlds/TestWorld2/Sprites/Old/Mountains.png"
+dest_files=[ "res://.import/Mountains.png-29757ebb8fee63f21a21df78ed6addab.stex" ]
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
+flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false

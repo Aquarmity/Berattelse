@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sand.png-28cf867e7fe759604d79b26d67abc93a.stex"
+path="res://.import/desertbackgroundtileset.png-d1168aeb1825c403497bd626edc75c2d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sand.png"
-dest_files=[ "res://.import/Sand.png-28cf867e7fe759604d79b26d67abc93a.stex" ]
+source_file="res://Room/TestWorlds/TestWorld1/Sprites/desertbackgroundtileset.png"
+dest_files=[ "res://.import/desertbackgroundtileset.png-d1168aeb1825c403497bd626edc75c2d.stex" ]
 
 [params]
 

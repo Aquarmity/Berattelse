@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Mountains.png-a73ae7694ccd9243cef40d5294749b42.stex"
+path="res://.import/stonewalltileset.png-38a681935d8caefd5494770adea3ba35.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mountains.png"
-dest_files=[ "res://.import/Mountains.png-a73ae7694ccd9243cef40d5294749b42.stex" ]
+source_file="res://Room/TestWorlds/TestWorld1/Sprites/stonewalltileset.png"
+dest_files=[ "res://.import/stonewalltileset.png-38a681935d8caefd5494770adea3ba35.stex" ]
 
 [params]
 

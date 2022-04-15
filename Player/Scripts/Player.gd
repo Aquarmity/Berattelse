@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
-export (int) var speed = 200
-export (int) var roll_speed = 500
+export (int) var speed = 150
+export (int) var roll_speed = 250
 var velocity = Vector2()
 
 enum state{idle, fighting, rolling, running, underAttack}

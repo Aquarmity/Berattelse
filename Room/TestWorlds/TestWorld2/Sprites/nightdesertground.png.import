@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nightdeserthills2.png-079ade4761565f77e97f426948db6118.stex"
+path="res://.import/nightdesertground.png-6d7f3d76c8531ad9494bd1bdc8e966e2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://nightdeserthills2.png"
-dest_files=[ "res://.import/nightdeserthills2.png-079ade4761565f77e97f426948db6118.stex" ]
+source_file="res://Room/TestWorlds/TestWorld2/Sprites/nightdesertground.png"
+dest_files=[ "res://.import/nightdesertground.png-6d7f3d76c8531ad9494bd1bdc8e966e2.stex" ]
 
 [params]
 
