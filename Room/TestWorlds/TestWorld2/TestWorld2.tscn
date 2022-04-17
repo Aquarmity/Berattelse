@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Room/TestWorlds/TestWorld2/Sprites/starlarge.png" type="Texture" id=1]
 [ext_resource path="res://Room/TestWorlds/TestWorld2/Scripts/Stars.gd" type="Script" id=2]
@@ -10,19 +10,13 @@
 [ext_resource path="res://Room/TestWorlds/TestWorld2/Sprites/nightdesertground.png" type="Texture" id=8]
 [ext_resource path="res://Room/TestWorlds/TestWorld2/Sprites/nightdeserthills2.png" type="Texture" id=9]
 [ext_resource path="res://Monsters/Blimp/Blimp.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Room/TestWorlds/TestWorld1/Wall.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Player/CameraBound.tscn" type="PackedScene" id=12]
 
 [node name="TestWorld2" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
-position = Vector2( 273, 76 )
-scale = Vector2( 1.00116, 1 )
 
 [node name="PlayerCamera" parent="." instance=ExtResource( 3 )]
 position = Vector2( -4, 12 )
-editor_draw_limits = true
-editor_draw_drag_margin = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_ignore_camera_zoom = true
@@ -101,69 +95,3 @@ scale = Vector2( -1, 1 )
 [node name="Blimp8" parent="." instance=ExtResource( 10 )]
 position = Vector2( -86, 31 )
 scale = Vector2( -1, 1 )
-
-[node name="Walls" type="Node" parent="."]
-
-[node name="Wall2" parent="Walls" instance=ExtResource( 11 )]
-position = Vector2( -186, 24 )
-rotation = 1.34809
-scale = Vector2( 1, 21.56 )
-
-[node name="Wall7" parent="Walls" instance=ExtResource( 11 )]
-position = Vector2( -101, 14 )
-rotation = 1.56622
-scale = Vector2( 1, 5.20246 )
-
-[node name="Wall11" parent="Walls" instance=ExtResource( 11 )]
-position = Vector2( 401, 13 )
-rotation = 1.56622
-scale = Vector2( 1, 5.20246 )
-
-[node name="Wall6" parent="Walls" instance=ExtResource( 11 )]
-position = Vector2( 441, -4.00001 )
-rotation = 1.34809
-scale = Vector2( 1, 21.56 )
-
-[node name="Wall" parent="Walls" instance=ExtResource( 11 )]
-position = Vector2( -262, 44 )
-scale = Vector2( 1, 21.56 )
-
-[node name="Wall10" parent="Walls" instance=ExtResource( 11 )]
-position = Vector2( 91, 150 )
-scale = Vector2( 60.2, 1.16001 )
-
-[node name="Wall9" parent="Walls" instance=ExtResource( 11 )]
-position = Vector2( 563, -27 )
-scale = Vector2( 1, 21.56 )
-
-[node name="Wall3" parent="Walls" instance=ExtResource( 11 )]
-position = Vector2( -158, 2 )
-rotation = 0.119528
-scale = Vector2( 26.92, 1 )
-
-[node name="Wall8" parent="Walls" instance=ExtResource( 11 )]
-position = Vector2( 346, 3.00001 )
-rotation = 0.119528
-scale = Vector2( 26.92, 1 )
-
-[node name="Wall5" parent="Walls" instance=ExtResource( 11 )]
-position = Vector2( 184, 19 )
-rotation = 0.156142
-scale = Vector2( 11.8812, 1 )
-
-[node name="Wall4" parent="Walls" instance=ExtResource( 11 )]
-position = Vector2( 116, 10 )
-rotation = -0.211985
-scale = Vector2( 11.8812, 1 )
-
-[node name="CameraBound" parent="." instance=ExtResource( 12 )]
-position = Vector2( -254, -129 )
-
-[node name="CameraBound4" parent="." instance=ExtResource( 12 )]
-position = Vector2( 554, -127 )
-
-[node name="CameraBound2" parent="." instance=ExtResource( 12 )]
-position = Vector2( -254, 141 )
-
-[node name="CameraBound3" parent="." instance=ExtResource( 12 )]
-position = Vector2( 555, 141 )

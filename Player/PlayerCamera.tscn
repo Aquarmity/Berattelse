@@ -3,6 +3,6 @@
 [ext_resource path="res://Player/Scripts/PlayerCamera.gd" type="Script" id=1]
 
 [node name="PlayerCamera" type="Camera2D"]
+position = Vector2( 235, 107 )
 current = true
-smoothing_speed = 10.0
 script = ExtResource( 1 )

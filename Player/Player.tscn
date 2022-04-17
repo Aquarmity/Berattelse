@@ -6,6 +6,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 5, 5 )
 
+<<<<<<< HEAD
 [sub_resource type="AtlasTexture" id=16]
 <<<<<<< HEAD
 atlas = ExtResource( 1 )
@@ -38,8 +39,35 @@ region = Rect2( 224, 0, 32, 32 )
 [sub_resource type="AtlasTexture" id=8]
 =======
 >>>>>>> 959034b368f2719e5112066c8e61d75111134b68
+=======
+[sub_resource type="AtlasTexture" id=2]
+>>>>>>> parent of 959034b (Wall Collisions + Camera Bounds)
 atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 32, 32 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 1 )
+region = Rect2( 224, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 1 )
+region = Rect2( 256, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=9]
 atlas = ExtResource( 1 )
@@ -74,6 +102,7 @@ atlas = ExtResource( 1 )
 region = Rect2( 32, 0, 32, 32 )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [sub_resource type="SpriteFrames" id=17]
 animations = [ {
 "frames": [ SubResource( 16 ) ],
@@ -108,15 +137,22 @@ atlas = ExtResource( 1 )
 region = Rect2( 224, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=8]
+=======
+[sub_resource type="AtlasTexture" id=16]
+>>>>>>> parent of 959034b (Wall Collisions + Camera Bounds)
 atlas = ExtResource( 1 )
-region = Rect2( 256, 0, 32, 32 )
+region = Rect2( 0, 0, 32, 32 )
 
 [sub_resource type="SpriteFrames" id=17]
 animations = [ {
+<<<<<<< HEAD
 "frames": [ SubResource( 16 ) ],
 >>>>>>> 959034b368f2719e5112066c8e61d75111134b68
+=======
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+>>>>>>> parent of 959034b (Wall Collisions + Camera Bounds)
 "loop": true,
-"name": "default",
+"name": "rundown",
 "speed": 5.0
 }, {
 "frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ) ],
@@ -131,14 +167,14 @@ animations = [ {
 <<<<<<< HEAD
 =======
 }, {
-"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"frames": [ SubResource( 16 ) ],
 "loop": true,
-"name": "rundown",
+"name": "default",
 "speed": 5.0
 >>>>>>> 959034b368f2719e5112066c8e61d75111134b68
 } ]
 
-[node name="Player" type="KinematicBody2D" groups=["Player", "player"]]
+[node name="Player" type="KinematicBody2D" groups=["player"]]
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
