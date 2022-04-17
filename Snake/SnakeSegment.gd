@@ -25,13 +25,13 @@ func _ready():
 
 func _physics_process(delta):
 	if preseg != null: # only move if there is something to move to
-		var dif_vector: Vector2 =  preseg.position - position
+		var difVector: Vector2 =  preseg.position - position
 		# find the difference in position to where the segment should be
-		if dif_vector.length() > (35 - 35*(maxsize-n)/maxsize): 
+		if difVector.length() > (35 - 35*(maxsize-n)/maxsize): 
 			# if it is too far away
-			dif_vector = dif_vector - dif_vector.normalized()*(35 - 35*(maxsize-n)/maxsize)
+			difVector = difVector - difVector.normalized()*(35 - 35*(maxsize-n)/maxsize)
 			# move just the distance to get within the circle defined by the radius of (35 - 35*(maxsize-n)/maxsize)
-			velocity += dif_vector.normalized() * accel_speed
+			velocity += difVector.normalized() * accel_speed
 			
-			move_and_slide(20 * dif_vector)
-			rotation = dif_vector.angle()
+			move_and_slide(20 * difVector)
+			rotation = difVector.angle()
