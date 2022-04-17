@@ -4,7 +4,7 @@ export (int) var speed = 200
 export (int) var roll_speed = 500
 var velocity = Vector2()
 
-enum state{idle, fighting, rolling, running, underAttack, punching}
+enum state{idle, fighting, rolling, running, underAttack}
 var Time: float = 0.0
 
 var player_state = state.running
@@ -49,21 +49,10 @@ func _physics_process(_delta):
 			timer.connect("timeout",self, "_on_Timer_timeout", [timer])
 			add_child(timer)
 			timer.start(0.2)
-		if Input.is_action_just_pressed("keyboard_b"):
-			player_state = state.punching
-			
-			var timer = Timer.new()
-			timer.connect("timeout",self, "_on_Timer_timeout", [timer])
-			add_child(timer)
-			timer.start(1)
 
 	if player_state == state.rolling:
 		var fast_velocity = velocity * roll_speed
 		move_and_slide(fast_velocity)
-		
-	if player_state == state.punching:
-		var stopped = velocity * 0
-		move_and_slide(stopped)
 		
 func _on_Timer_timeout(args):
 	player_state = state.running
