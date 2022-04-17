@@ -91,9 +91,6 @@ scale = Vector2( -1, 1 )
 [node name="Blimp5" parent="." instance=ExtResource( 10 )]
 position = Vector2( -61, 67 )
 
-[node name="Blimp6" parent="." instance=ExtResource( 10 )]
-position = Vector2( -136, 65 )
-
 [node name="Blimp7" parent="." instance=ExtResource( 10 )]
 position = Vector2( -98, 94 )
 scale = Vector2( -1, 1 )
